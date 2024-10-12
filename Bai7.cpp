@@ -153,7 +153,8 @@ void xuatChuyenBay(const ChuyenBay& cb) {
 }
 
 // Ham tim kiem chuyen bay theo ma, noi di hoac noi den
-bool timKiemChuyenBay(const vector<ChuyenBay>& ds, const string& key, const int& select) {
+bool timKiemChuyenBay(const vector<ChuyenBay>& ds, 
+                        const string& key, const int& select) {
     bool found = false;
     for (const auto& cb : ds) {
         if (select == 3 && cb.maChuyenBay == key) {
@@ -268,7 +269,8 @@ int main() {
                 cout << "Nhap ma chuyen bay can tim: ";
 				getline(cin, maChuyenBay);
                 if (!timKiemChuyenBay(danhSachChuyenBay, maChuyenBay, luaChon)) {
-                    cout << "Khong tim thay ma chuyen bay '" << maChuyenBay << "'." << endl;
+                    cout << "Khong tim thay ma chuyen bay '" 
+                            << maChuyenBay << "'." << endl;
                 }
                 break;
             }
@@ -310,7 +312,8 @@ int main() {
                 cout << "Nhap noi den: ";
 				getline(cin, noiDen);
                 int soChuyen = demChuyenBay(danhSachChuyenBay, noiDi, noiDen);
-                cout << "So luong chuyen bay tu '" << noiDi << "' den '" << noiDen << "': " << soChuyen << endl;
+                cout << "So luong chuyen bay tu '" << noiDi 
+                        << "' den '" << noiDen << "': " << soChuyen << endl;
                 break;
             }
 
