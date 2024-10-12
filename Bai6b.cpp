@@ -96,7 +96,8 @@ struct QLHocSinh {
 			cout << "Nhap diem toan: ";
 			cin >> a.diemToan;
 			if (a.diemToan < 0 || a.diemToan > 10) {
-				cout << "Diem toan phai nam trong khoang tu 0 den 10! Vui long nhap lai: ";
+				cout << "Diem toan phai nam trong khoang tu 0 den 10";
+				cout <<"! Vui long nhap lai: ";
 				cout << "\n\n";
 				continue;
 			}
@@ -104,7 +105,8 @@ struct QLHocSinh {
 			cout << "Nhap diem van: ";
 			cin >> a.diemVan;
 			if (a.diemVan < 0 || a.diemVan > 10) {
-				cout << "Diem van phai nam trong khoang tu 0 den 10! Vui long nhap lai: ";
+				cout << "Diem van phai nam trong khoang tu 0 den 10";
+				cout <<"! Vui long nhap lai: ";
 				cout << "\n\n";
 				continue;
 			}
@@ -112,8 +114,8 @@ struct QLHocSinh {
 			cout << "Nhap diem ngoai ngu: ";
 			cin >> a.diemNgoaiNgu;
 			if (a.diemNgoaiNgu < 0 || a.diemNgoaiNgu > 10) {
-				cout << 
-					"Diem ngoai ngu phai nam trong khoang tu 0 den 10! Vui long nhap lai: ";
+				cout << "Diem ngoai ngu phai nam trong khoang tu 0 den 10";
+				cout <<"! Vui long nhap lai: ";
 				cout << "\n\n";
 				continue;
 			}
