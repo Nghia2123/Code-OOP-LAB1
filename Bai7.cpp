@@ -70,7 +70,7 @@ bool kiemTraDiaDanh(const string& diaDanh) {
 		size_t b = 0;
 		size_t k = diaDanh.find(' ');
 
-        if (diaDanh[0] == 'T' && diaDanh[1] == 'P') {
+        if (diaDanh[0] == 'T' && (diaDanh[1] == 'P' || diaDanh[1] == 'p')) {
             b = 3;
             k = diaDanh.find(' ', b);
         }
